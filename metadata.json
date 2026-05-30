@@ -1,0 +1,6 @@
+{
+  "name": "Remix: Neon Stream Snake",
+  "description": "A high-performance, brutalist-inspired snake game with a sleek technical aesthetic and glowing data-stream visuals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

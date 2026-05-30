@@ -1,0 +1,15 @@
+{
+  "appId": "com.neonstreamsnake.app",
+  "productName": "Neon Stream Snake",
+  "directories": {
+    "output": "dist-electron"
+  },
+  "files": [
+    "dist/**/*",
+    "electron-main.cjs",
+    "package.json"
+  ],
+  "win": {
+    "target": "portable"
+  }
+}

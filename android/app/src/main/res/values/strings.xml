@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Neon Stream Snake</string>
+    <string name="title_activity_main">Neon Stream Snake</string>
+    <string name="package_name">com.neonstreamsnake.app</string>
+    <string name="custom_url_scheme">com.neonstreamsnake.app</string>
+</resources>

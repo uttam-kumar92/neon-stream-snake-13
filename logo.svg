@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Deep background glow -->
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#142c22" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#05050a" stop-opacity="1"/>
+    </radialGradient>
+    
+    <!-- Neon green gradient -->
+    <linearGradient id="snakeNeon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00ffaa"/>
+      <stop offset="50%" stop-color="#00ff66"/>
+      <stop offset="100%" stop-color="#00e5ff"/>
+    </linearGradient>
+
+    <!-- Glowing effect filters -->
+    <filter id="neonGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur1" />
+      <feGaussianBlur stdDeviation="15" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="particleGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Ground context / theme -->
+  <rect width="512" height="512" fill="url(#bgGlow)"/>
+
+  <!-- Subtle Cyber Grid in Background -->
+  <g stroke="#ffffff" stroke-width="0.5" opacity="0.08">
+    <path d="M0,64 L512,64 M0,128 L512,128 M0,192 L512,192 M0,256 L512,256 M0,320 L512,320 M0,384 L512,384 M0,448 L512,448" />
+    <path d="M64,0 L64,512 M128,0 L128,512 M192,0 L192,512 M256,0 L256,512 M320,0 L320,512 M384,0 L384,512 M448,0 L448,512" />
+  </g>
+
+  <!-- Glowing Ring Accents -->
+  <circle cx="256" cy="256" r="210" fill="none" stroke="#00ff66" stroke-width="1.5" stroke-dasharray="10, 15" opacity="0.25" filter="url(#neonGlow)"/>
+  <circle cx="256" cy="256" r="230" fill="none" stroke="#00e5ff" stroke-width="1" stroke-dasharray="50, 40, 10, 40" opacity="0.15" filter="url(#neonGlow)"/>
+
+  <!-- Glowing Snake 'S' Shape Core -->
+  <!-- Thick glow layer behind -->
+  <path d="M 360 160 C 360 80, 280 80, 256 120 C 230 160, 150 160, 150 256 C 150 352, 230 352, 256 392 C 280 432, 360 432, 360 352" 
+        fill="none" stroke="#00ff66" stroke-width="24" stroke-linecap="round" opacity="0.4" filter="url(#neonGlow)"/>
+
+  <!-- Vibrant main gradient path -->
+  <path d="M 360 160 C 360 80, 280 80, 256 120 C 230 160, 150 160, 150 256 C 150 352, 230 352, 256 392 C 280 432, 360 432, 360 352" 
+        fill="none" stroke="url(#snakeNeon)" stroke-width="12" stroke-linecap="round" filter="url(#neonGlow)"/>
+
+  <!-- Snake eye or sleek light core line -->
+  <path d="M 355 160 C 355 90, 280 90, 256 123 C 230 163, 152 163, 152 256 C 152 349, 230 349, 256 389 C 280 422, 355 422, 355 352" 
+        fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+
+  <!-- Snake head arrow design component -->
+  <polygon points="360,140 385,165 360,190 352,165" fill="#00e5ff" filter="url(#neonGlow)"/>
+  <polygon points="360,140 385,165 360,190 352,165" fill="#ffffff" opacity="0.8"/>
+
+  <!-- Particle bursts (small neon shapes & spark lines) -->
+  <!-- Left Side Sparks -->
+  <circle cx="100" cy="200" r="5" fill="#00ffff" filter="url(#particleGlow)" />
+  <circle cx="120" cy="140" r="3" fill="#00ff66" filter="url(#particleGlow)" />
+  <rect x="80" y="270" width="8" height="8" transform="rotate(45, 84, 274)" fill="#00ff66" filter="url(#particleGlow)" />
+  
+  <!-- Right Side Sparks -->
+  <circle cx="412" cy="312" r="6" fill="#00ff66" filter="url(#particleGlow)" />
+  <circle cx="390" cy="372" r="4" fill="#00ffff" filter="url(#particleGlow)" />
+  <rect x="420" y="230" width="10" height="10" transform="rotate(45, 425, 235)" fill="#00ffff" filter="url(#particleGlow)" />
+
+  <!-- Center-around Spark Matrix -->
+  <circle cx="210" cy="190" r="3" fill="#ffffff" filter="url(#particleGlow)" />
+  <circle cx="300" cy="320" r="3" fill="#ffffff" filter="url(#particleGlow)" />
+  <circle cx="270" cy="160" r="2.5" fill="#00ff66" />
+  <circle cx="240" cy="350" r="2.5" fill="#00e5ff" />
+
+  <!-- Pixelated explosion cross sparks -->
+  <line x1="160" y1="360" x2="180" y2="360" stroke="#00ff66" stroke-width="2" filter="url(#particleGlow)"/>
+  <line x1="170" y1="350" x2="170" y2="370" stroke="#00ff66" stroke-width="2" filter="url(#particleGlow)"/>
+
+  <line x1="330" y1="130" x2="350" y2="130" stroke="#00e5ff" stroke-width="2" filter="url(#particleGlow)"/>
+  <line x1="340" y1="120" x2="340" y2="140" stroke="#00e5ff" stroke-width="2" filter="url(#particleGlow)"/>
+
+  <!-- Center Glow Orb for Depth -->
+  <circle cx="256" cy="256" r="80" fill="#00ff66" opacity="0.04" filter="blur"/>
+</svg>
