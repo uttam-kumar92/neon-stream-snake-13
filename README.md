@@ -1,12 +1,27 @@
+
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
+  <img width="400" alt="GAME PAGE 1" src="https://github.com/user-attachments/assets/b7644f74-4745-48c7-b664-74a0f56cec9c" />
+  <img width="400" alt="GAME PAGE 2" src="https://github.com/user-attachments/assets/32eb1d55-a40e-4738-9ca2-95c43bdd5c1b" />
 </div>
 
-# Run and deploy your AI Studio app
+# 🐍 Neon Stream Snake
 
-This contains everything you need to run your app locally.
+### 🎮 [Play the Live Demo Here!](https://uttam-kumar92.github.io/neon-stream-snake-13/)
 
-View your app in AI Studio: https://ai.studio/apps/b85dbcb2-4c16-45ea-a07f-1629b7e641bf
+An electrifying, AI-enhanced arcade game built with React and TypeScript. This project modernizes the classic snake mechanics with stunning visual effects and smart features.
+
+## ✨ Features
+
+* **Particle Burst Engine:** Custom-built rendering for immersive, neon-style visual feedback and collision effects.
+* **Integrity System:** [Replace this bracket with a quick sentence about how your integrity system works]
+* **AI-Powered:** Integrated with the Gemini API to [Replace this bracket with a quick sentence about what the AI does]
+* **Cross-Platform Ready:** Configured for web, mobile (Android via Capacitor), and desktop (Electron).
+
+## 🚀 Tech Stack
+
+* **Frontend:** React, TypeScript, Vite
+* **AI Integration:** Google Gemini API (via Google AI Studio)
+* **Build & Deployment:** Capacitor, Electron, GitHub Pages
 
 ## Run Locally
 
