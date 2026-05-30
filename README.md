@@ -13,8 +13,7 @@ An electrifying, AI-enhanced arcade game built with React and TypeScript. This p
 ## ✨ Features
 
 * **Particle Burst Engine:** Custom-built rendering for immersive, neon-style visual feedback and collision effects.
-* **Integrity System:** [Replace this bracket with a quick sentence about how your integrity system works]
-* **AI-Powered:** Integrated with the Gemini API to [Replace this bracket with a quick sentence about what the AI does]
+* **AI-Powered:** Integrated with the Gemini API.
 * **Cross-Platform Ready:** Configured for web, mobile (Android via Capacitor), and desktop (Electron).
 
 ## 🚀 Tech Stack
